@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/upload_csv.css' %}">
+    <title>Upload CSV</title>
+</head>
+<body>
+    <div class="form-container">
+        <form method="post" enctype="multipart/form-data" class="upload-form" id="uploadForm">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="submit-btn">Upload CSV</button>
+        </form>
+        <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+            <!-- Add a spinner or any loading animation here -->
+            Loading...
+        </div>
+        <a href="{% url 'dashboard_view' %}" class="back-link">Back to Dashboard</a>
+    </div>
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function() {
+            document.getElementById('loadingSpinner').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CEEDS-UACH Homepage</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/department-logo.png' %}" alt="Department Logo" class="department-logo">
+        <h1>Welcome to CEEDS-UACH</h1>
+        <img src="{% static 'images/university-logo.png' %}" alt="University Logo" class="university-logo">
+    </header>      
+    <nav>
+        <ul>
+            <li><a href="{% url 'dashboard_view' %} ">Energy Dashboard</a></li>
+            <!-- Add more menu items here -->
+        </ul>
+    </nav>
+
+    <div class="branch-container">
+        <div class="branch-card">
+            <img src="{% static 'images/policyanalysislogo.png' %}" alt="Policy Analysis" class="branch-logo">
+            <p>Policy Analysis</p>
+        </div>
+        <div class="branch-card">
+            <img src="{% static 'images/lawjusticelogo.png' %}" alt="Law and Justice" class="branch-logo">
+            <p>Law and Justice</p>
+        </div>
+        <div class="branch-card">
+            <img src="{% static 'images/datasciencelogo.png' %}" alt="Data Science" class="branch-logo">
+            <p>Data Science</p>
+        </div>
+    </div>    
+    
+</body>
+</html>

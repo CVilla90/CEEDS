@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Energy Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}">
+    <!-- Load Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'upload_csv' %}">Upload CSV</a></li>
+        </ul>
+    </nav>
+
+    <h1>Energy Consumption Dashboard</h1>
+    <div class="header-area">
+        <h2 id="file-name">Filename: {{ uploaded_file_name }}</h2>
+        <a href="{% url 'wipe_data_view' %}" id="wipe-data-btn" class="wipe-button">Wipe Data and Start Fresh</a>
+    </div>
+
+    <!-- Filter Form -->
+    <form method="get" action="{% url 'dashboard_view' %}">
+        <select name="year">
+            <option value="All">All</option>
+            {% for year in distinct_years %}
+            <option value="{{ year }}" {% if year|stringformat:"s" == year_filter %}selected{% endif %}>
+                {{ year }}
+            </option>
+            {% endfor %}
+        </select>
+        <select name="school">
+            <option value="All">All</option>
+            {% for school in schools %}
+            <option value="{{ school }}" {% if school == school_filter %}selected{% endif %}>
+                {{ school }}
+            </option>
+            {% endfor %}
+        </select>
+        <select name="sort">
+            <option value="year">Year Ascending</option>
+            <option value="-year">Year Descending</option>
+            <option value="school__name">School Ascending</option>
+            <option value="-school__name">School Descending</option>
+            <option value="total_consumption">Consumption Ascending</option>
+            <option value="-total_consumption">Consumption Descending</option>
+        </select>
+        <button type="submit">Filter</button>
+    </form>
+
+    <!-- Table for individual and total yearly consumption -->
+    <h2>Energy Consumption Details</h2>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>School</th>
+            <th>Total Consumption (GWh)</th>
+        </tr>
+        {% for entry in consumption_data %}
+        <tr>
+            <td>{{ entry.year }}</td>
+            <td>{% if school_filter == 'University Total' %}Total{% else %}{{ entry.school__name }}{% endif %}</td>
+            <td>{{ entry.total_consumption }}</td>
+        </tr>
+        {% endfor %}        
+    </table>
+
+<!-- Chart container -->
+<div>
+    <canvas id="energyChart"></canvas>
+</div>
+
+<!-- Inline script to create chart, at the bottom of your <body> tag -->
+<script>
+    var ctx = document.getElementById('energyChart').getContext('2d');
+    var energyChart = new Chart(ctx, {
+        type: 'bar', // or 'line', 'doughnut', etc.
+        data: {
+            labels: {{ chart_data.labels|safe }},  // Insert the years
+            datasets: [{
+                label: 'Energy Consumption',
+                data: {{ chart_data.data|safe }},  // Insert the consumption data
+                backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                borderColor: 'rgba(0, 123, 255, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

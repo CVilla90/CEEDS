@@ -1,0 +1,901 @@
+Year,Month,School,Consumo_Energético
+2017,Ene,Zootecnia y Ecología,0.097
+2017,Ene,Ciencias Agrícolas y Forestales,0.096
+2017,Ene,Ciencias Agrotecnológicas,0.096
+2017,Ene,Ingeniería,0.113
+2017,Ene,Ciencias Químicas,0.104
+2017,Ene,Contaduría y Administración,0.125
+2017,Ene,Ciencias Políticas y Sociales,0.103
+2017,Ene,Economía Internacional,0.094
+2017,Ene,Derecho,0.11
+2017,Ene,Filosofía y Letras,0.096
+2017,Ene,Artes,0.097
+2017,Ene,Medicina,0.11
+2017,Ene,Odontología,0.104
+2017,Ene,Enfermería y Nutriología,0.103
+2017,Ene,Ciencias de la Cultura Física,0.098
+2017,Feb,Zootecnia y Ecología,0.097
+2017,Feb,Ciencias Agrícolas y Forestales,0.096
+2017,Feb,Ciencias Agrotecnológicas,0.096
+2017,Feb,Ingeniería,0.113
+2017,Feb,Ciencias Químicas,0.104
+2017,Feb,Contaduría y Administración,0.125
+2017,Feb,Ciencias Políticas y Sociales,0.103
+2017,Feb,Economía Internacional,0.094
+2017,Feb,Derecho,0.11
+2017,Feb,Filosofía y Letras,0.096
+2017,Feb,Artes,0.097
+2017,Feb,Medicina,0.11
+2017,Feb,Odontología,0.104
+2017,Feb,Enfermería y Nutriología,0.103
+2017,Feb,Ciencias de la Cultura Física,0.098
+2017,Mar,Zootecnia y Ecología,0.103
+2017,Mar,Ciencias Agrícolas y Forestales,0.101
+2017,Mar,Ciencias Agrotecnológicas,0.101
+2017,Mar,Ingeniería,0.119
+2017,Mar,Ciencias Químicas,0.109
+2017,Mar,Contaduría y Administración,0.132
+2017,Mar,Ciencias Políticas y Sociales,0.108
+2017,Mar,Economía Internacional,0.099
+2017,Mar,Derecho,0.116
+2017,Mar,Filosofía y Letras,0.101
+2017,Mar,Artes,0.102
+2017,Mar,Medicina,0.116
+2017,Mar,Odontología,0.109
+2017,Mar,Enfermería y Nutriología,0.108
+2017,Mar,Ciencias de la Cultura Física,0.103
+2017,Abr,Zootecnia y Ecología,0.103
+2017,Abr,Ciencias Agrícolas y Forestales,0.101
+2017,Abr,Ciencias Agrotecnológicas,0.101
+2017,Abr,Ingeniería,0.119
+2017,Abr,Ciencias Químicas,0.109
+2017,Abr,Contaduría y Administración,0.132
+2017,Abr,Ciencias Políticas y Sociales,0.108
+2017,Abr,Economía Internacional,0.099
+2017,Abr,Derecho,0.116
+2017,Abr,Filosofía y Letras,0.101
+2017,Abr,Artes,0.102
+2017,Abr,Medicina,0.116
+2017,Abr,Odontología,0.109
+2017,Abr,Enfermería y Nutriología,0.108
+2017,Abr,Ciencias de la Cultura Física,0.103
+2017,May,Zootecnia y Ecología,0.108
+2017,May,Ciencias Agrícolas y Forestales,0.106
+2017,May,Ciencias Agrotecnológicas,0.106
+2017,May,Ingeniería,0.124
+2017,May,Ciencias Químicas,0.115
+2017,May,Contaduría y Administración,0.138
+2017,May,Ciencias Políticas y Sociales,0.114
+2017,May,Economía Internacional,0.104
+2017,May,Derecho,0.121
+2017,May,Filosofía y Letras,0.106
+2017,May,Artes,0.107
+2017,May,Medicina,0.121
+2017,May,Odontología,0.115
+2017,May,Enfermería y Nutriología,0.114
+2017,May,Ciencias de la Cultura Física,0.109
+2017,Jun,Zootecnia y Ecología,0.113
+2017,Jun,Ciencias Agrícolas y Forestales,0.111
+2017,Jun,Ciencias Agrotecnológicas,0.111
+2017,Jun,Ingeniería,0.13
+2017,Jun,Ciencias Químicas,0.12
+2017,Jun,Contaduría y Administración,0.145
+2017,Jun,Ciencias Políticas y Sociales,0.119
+2017,Jun,Economía Internacional,0.109
+2017,Jun,Derecho,0.127
+2017,Jun,Filosofía y Letras,0.111
+2017,Jun,Artes,0.112
+2017,Jun,Medicina,0.127
+2017,Jun,Odontología,0.12
+2017,Jun,Enfermería y Nutriología,0.119
+2017,Jun,Ciencias de la Cultura Física,0.114
+2017,Jul,Zootecnia y Ecología,0.118
+2017,Jul,Ciencias Agrícolas y Forestales,0.116
+2017,Jul,Ciencias Agrotecnológicas,0.116
+2017,Jul,Ingeniería,0.136
+2017,Jul,Ciencias Químicas,0.125
+2017,Jul,Contaduría y Administración,0.151
+2017,Jul,Ciencias Políticas y Sociales,0.124
+2017,Jul,Economía Internacional,0.114
+2017,Jul,Derecho,0.133
+2017,Jul,Filosofía y Letras,0.116
+2017,Jul,Artes,0.117
+2017,Jul,Medicina,0.133
+2017,Jul,Odontología,0.125
+2017,Jul,Enfermería y Nutriología,0.124
+2017,Jul,Ciencias de la Cultura Física,0.119
+2017,Ago,Zootecnia y Ecología,0.113
+2017,Ago,Ciencias Agrícolas y Forestales,0.111
+2017,Ago,Ciencias Agrotecnológicas,0.111
+2017,Ago,Ingeniería,0.13
+2017,Ago,Ciencias Químicas,0.12
+2017,Ago,Contaduría y Administración,0.145
+2017,Ago,Ciencias Políticas y Sociales,0.119
+2017,Ago,Economía Internacional,0.109
+2017,Ago,Derecho,0.127
+2017,Ago,Filosofía y Letras,0.111
+2017,Ago,Artes,0.112
+2017,Ago,Medicina,0.127
+2017,Ago,Odontología,0.12
+2017,Ago,Enfermería y Nutriología,0.119
+2017,Ago,Ciencias de la Cultura Física,0.114
+2017,Sep,Zootecnia y Ecología,0.108
+2017,Sep,Ciencias Agrícolas y Forestales,0.106
+2017,Sep,Ciencias Agrotecnológicas,0.106
+2017,Sep,Ingeniería,0.124
+2017,Sep,Ciencias Químicas,0.115
+2017,Sep,Contaduría y Administración,0.138
+2017,Sep,Ciencias Políticas y Sociales,0.114
+2017,Sep,Economía Internacional,0.104
+2017,Sep,Derecho,0.121
+2017,Sep,Filosofía y Letras,0.106
+2017,Sep,Artes,0.107
+2017,Sep,Medicina,0.121
+2017,Sep,Odontología,0.115
+2017,Sep,Enfermería y Nutriología,0.114
+2017,Sep,Ciencias de la Cultura Física,0.109
+2017,Oct,Zootecnia y Ecología,0.103
+2017,Oct,Ciencias Agrícolas y Forestales,0.101
+2017,Oct,Ciencias Agrotecnológicas,0.101
+2017,Oct,Ingeniería,0.119
+2017,Oct,Ciencias Químicas,0.109
+2017,Oct,Contaduría y Administración,0.132
+2017,Oct,Ciencias Políticas y Sociales,0.108
+2017,Oct,Economía Internacional,0.099
+2017,Oct,Derecho,0.116
+2017,Oct,Filosofía y Letras,0.101
+2017,Oct,Artes,0.102
+2017,Oct,Medicina,0.116
+2017,Oct,Odontología,0.109
+2017,Oct,Enfermería y Nutriología,0.108
+2017,Oct,Ciencias de la Cultura Física,0.103
+2017,Nov,Zootecnia y Ecología,0.097
+2017,Nov,Ciencias Agrícolas y Forestales,0.096
+2017,Nov,Ciencias Agrotecnológicas,0.096
+2017,Nov,Ingeniería,0.113
+2017,Nov,Ciencias Químicas,0.104
+2017,Nov,Contaduría y Administración,0.125
+2017,Nov,Ciencias Políticas y Sociales,0.103
+2017,Nov,Economía Internacional,0.094
+2017,Nov,Derecho,0.11
+2017,Nov,Filosofía y Letras,0.096
+2017,Nov,Artes,0.097
+2017,Nov,Medicina,0.11
+2017,Nov,Odontología,0.104
+2017,Nov,Enfermería y Nutriología,0.103
+2017,Nov,Ciencias de la Cultura Física,0.098
+2017,Dic,Zootecnia y Ecología,0.092
+2017,Dic,Ciencias Agrícolas y Forestales,0.091
+2017,Dic,Ciencias Agrotecnológicas,0.091
+2017,Dic,Ingeniería,0.107
+2017,Dic,Ciencias Químicas,0.098
+2017,Dic,Contaduría y Administración,0.119
+2017,Dic,Ciencias Políticas y Sociales,0.097
+2017,Dic,Economía Internacional,0.089
+2017,Dic,Derecho,0.104
+2017,Dic,Filosofía y Letras,0.091
+2017,Dic,Artes,0.091
+2017,Dic,Medicina,0.104
+2017,Dic,Odontología,0.098
+2017,Dic,Enfermería y Nutriología,0.097
+2017,Dic,Ciencias de la Cultura Física,0.093
+2018,Ene,Zootecnia y Ecología,0.099
+2018,Ene,Ciencias Agrícolas y Forestales,0.097
+2018,Ene,Ciencias Agrotecnológicas,0.097
+2018,Ene,Ingeniería,0.114
+2018,Ene,Ciencias Químicas,0.105
+2018,Ene,Contaduría y Administración,0.127
+2018,Ene,Ciencias Políticas y Sociales,0.104
+2018,Ene,Economía Internacional,0.095
+2018,Ene,Derecho,0.112
+2018,Ene,Filosofía y Letras,0.097
+2018,Ene,Artes,0.098
+2018,Ene,Medicina,0.112
+2018,Ene,Odontología,0.105
+2018,Ene,Enfermería y Nutriología,0.104
+2018,Ene,Ciencias de la Cultura Física,0.1
+2018,Feb,Zootecnia y Ecología,0.099
+2018,Feb,Ciencias Agrícolas y Forestales,0.097
+2018,Feb,Ciencias Agrotecnológicas,0.097
+2018,Feb,Ingeniería,0.114
+2018,Feb,Ciencias Químicas,0.105
+2018,Feb,Contaduría y Administración,0.127
+2018,Feb,Ciencias Políticas y Sociales,0.104
+2018,Feb,Economía Internacional,0.095
+2018,Feb,Derecho,0.112
+2018,Feb,Filosofía y Letras,0.097
+2018,Feb,Artes,0.098
+2018,Feb,Medicina,0.112
+2018,Feb,Odontología,0.105
+2018,Feb,Enfermería y Nutriología,0.104
+2018,Feb,Ciencias de la Cultura Física,0.1
+2018,Mar,Zootecnia y Ecología,0.104
+2018,Mar,Ciencias Agrícolas y Forestales,0.102
+2018,Mar,Ciencias Agrotecnológicas,0.102
+2018,Mar,Ingeniería,0.12
+2018,Mar,Ciencias Químicas,0.111
+2018,Mar,Contaduría y Administración,0.134
+2018,Mar,Ciencias Políticas y Sociales,0.11
+2018,Mar,Economía Internacional,0.1
+2018,Mar,Derecho,0.117
+2018,Mar,Filosofía y Letras,0.102
+2018,Mar,Artes,0.103
+2018,Mar,Medicina,0.117
+2018,Mar,Odontología,0.111
+2018,Mar,Enfermería y Nutriología,0.11
+2018,Mar,Ciencias de la Cultura Física,0.105
+2018,Abr,Zootecnia y Ecología,0.104
+2018,Abr,Ciencias Agrícolas y Forestales,0.102
+2018,Abr,Ciencias Agrotecnológicas,0.102
+2018,Abr,Ingeniería,0.12
+2018,Abr,Ciencias Químicas,0.111
+2018,Abr,Contaduría y Administración,0.134
+2018,Abr,Ciencias Políticas y Sociales,0.11
+2018,Abr,Economía Internacional,0.1
+2018,Abr,Derecho,0.117
+2018,Abr,Filosofía y Letras,0.102
+2018,Abr,Artes,0.103
+2018,Abr,Medicina,0.117
+2018,Abr,Odontología,0.111
+2018,Abr,Enfermería y Nutriología,0.11
+2018,Abr,Ciencias de la Cultura Física,0.105
+2018,May,Zootecnia y Ecología,0.109
+2018,May,Ciencias Agrícolas y Forestales,0.107
+2018,May,Ciencias Agrotecnológicas,0.107
+2018,May,Ingeniería,0.126
+2018,May,Ciencias Químicas,0.116
+2018,May,Contaduría y Administración,0.14
+2018,May,Ciencias Políticas y Sociales,0.115
+2018,May,Economía Internacional,0.105
+2018,May,Derecho,0.123
+2018,May,Filosofía y Letras,0.107
+2018,May,Artes,0.108
+2018,May,Medicina,0.123
+2018,May,Odontología,0.116
+2018,May,Enfermería y Nutriología,0.115
+2018,May,Ciencias de la Cultura Física,0.11
+2018,Jun,Zootecnia y Ecología,0.115
+2018,Jun,Ciencias Agrícolas y Forestales,0.112
+2018,Jun,Ciencias Agrotecnológicas,0.112
+2018,Jun,Ingeniería,0.132
+2018,Jun,Ciencias Químicas,0.122
+2018,Jun,Contaduría y Administración,0.147
+2018,Jun,Ciencias Políticas y Sociales,0.121
+2018,Jun,Economía Internacional,0.11
+2018,Jun,Derecho,0.129
+2018,Jun,Filosofía y Letras,0.112
+2018,Jun,Artes,0.113
+2018,Jun,Medicina,0.129
+2018,Jun,Odontología,0.122
+2018,Jun,Enfermería y Nutriología,0.121
+2018,Jun,Ciencias de la Cultura Física,0.116
+2018,Jul,Zootecnia y Ecología,0.12
+2018,Jul,Ciencias Agrícolas y Forestales,0.118
+2018,Jul,Ciencias Agrotecnológicas,0.118
+2018,Jul,Ingeniería,0.138
+2018,Jul,Ciencias Químicas,0.127
+2018,Jul,Contaduría y Administración,0.154
+2018,Jul,Ciencias Políticas y Sociales,0.126
+2018,Jul,Economía Internacional,0.115
+2018,Jul,Derecho,0.135
+2018,Jul,Filosofía y Letras,0.118
+2018,Jul,Artes,0.119
+2018,Jul,Medicina,0.135
+2018,Jul,Odontología,0.127
+2018,Jul,Enfermería y Nutriología,0.126
+2018,Jul,Ciencias de la Cultura Física,0.121
+2018,Ago,Zootecnia y Ecología,0.115
+2018,Ago,Ciencias Agrícolas y Forestales,0.112
+2018,Ago,Ciencias Agrotecnológicas,0.112
+2018,Ago,Ingeniería,0.132
+2018,Ago,Ciencias Químicas,0.122
+2018,Ago,Contaduría y Administración,0.147
+2018,Ago,Ciencias Políticas y Sociales,0.121
+2018,Ago,Economía Internacional,0.11
+2018,Ago,Derecho,0.129
+2018,Ago,Filosofía y Letras,0.112
+2018,Ago,Artes,0.113
+2018,Ago,Medicina,0.129
+2018,Ago,Odontología,0.122
+2018,Ago,Enfermería y Nutriología,0.121
+2018,Ago,Ciencias de la Cultura Física,0.116
+2018,Sep,Zootecnia y Ecología,0.109
+2018,Sep,Ciencias Agrícolas y Forestales,0.107
+2018,Sep,Ciencias Agrotecnológicas,0.107
+2018,Sep,Ingeniería,0.126
+2018,Sep,Ciencias Químicas,0.116
+2018,Sep,Contaduría y Administración,0.14
+2018,Sep,Ciencias Políticas y Sociales,0.115
+2018,Sep,Economía Internacional,0.105
+2018,Sep,Derecho,0.123
+2018,Sep,Filosofía y Letras,0.107
+2018,Sep,Artes,0.108
+2018,Sep,Medicina,0.123
+2018,Sep,Odontología,0.116
+2018,Sep,Enfermería y Nutriología,0.115
+2018,Sep,Ciencias de la Cultura Física,0.11
+2018,Oct,Zootecnia y Ecología,0.104
+2018,Oct,Ciencias Agrícolas y Forestales,0.102
+2018,Oct,Ciencias Agrotecnológicas,0.102
+2018,Oct,Ingeniería,0.12
+2018,Oct,Ciencias Químicas,0.111
+2018,Oct,Contaduría y Administración,0.134
+2018,Oct,Ciencias Políticas y Sociales,0.11
+2018,Oct,Economía Internacional,0.1
+2018,Oct,Derecho,0.117
+2018,Oct,Filosofía y Letras,0.102
+2018,Oct,Artes,0.103
+2018,Oct,Medicina,0.117
+2018,Oct,Odontología,0.111
+2018,Oct,Enfermería y Nutriología,0.11
+2018,Oct,Ciencias de la Cultura Física,0.105
+2018,Nov,Zootecnia y Ecología,0.099
+2018,Nov,Ciencias Agrícolas y Forestales,0.097
+2018,Nov,Ciencias Agrotecnológicas,0.097
+2018,Nov,Ingeniería,0.114
+2018,Nov,Ciencias Químicas,0.105
+2018,Nov,Contaduría y Administración,0.127
+2018,Nov,Ciencias Políticas y Sociales,0.104
+2018,Nov,Economía Internacional,0.095
+2018,Nov,Derecho,0.112
+2018,Nov,Filosofía y Letras,0.097
+2018,Nov,Artes,0.098
+2018,Nov,Medicina,0.112
+2018,Nov,Odontología,0.105
+2018,Nov,Enfermería y Nutriología,0.104
+2018,Nov,Ciencias de la Cultura Física,0.1
+2018,Dic,Zootecnia y Ecología,0.094
+2018,Dic,Ciencias Agrícolas y Forestales,0.092
+2018,Dic,Ciencias Agrotecnológicas,0.092
+2018,Dic,Ingeniería,0.108
+2018,Dic,Ciencias Químicas,0.1
+2018,Dic,Contaduría y Administración,0.12
+2018,Dic,Ciencias Políticas y Sociales,0.099
+2018,Dic,Economía Internacional,0.09
+2018,Dic,Derecho,0.106
+2018,Dic,Filosofía y Letras,0.092
+2018,Dic,Artes,0.093
+2018,Dic,Medicina,0.106
+2018,Dic,Odontología,0.1
+2018,Dic,Enfermería y Nutriología,0.099
+2018,Dic,Ciencias de la Cultura Física,0.095
+2019,Ene,Zootecnia y Ecología,0.1
+2019,Ene,Ciencias Agrícolas y Forestales,0.099
+2019,Ene,Ciencias Agrotecnológicas,0.099
+2019,Ene,Ingeniería,0.116
+2019,Ene,Ciencias Químicas,0.107
+2019,Ene,Contaduría y Administración,0.129
+2019,Ene,Ciencias Políticas y Sociales,0.106
+2019,Ene,Economía Internacional,0.097
+2019,Ene,Derecho,0.113
+2019,Ene,Filosofía y Letras,0.099
+2019,Ene,Artes,0.1
+2019,Ene,Medicina,0.113
+2019,Ene,Odontología,0.107
+2019,Ene,Enfermería y Nutriología,0.106
+2019,Ene,Ciencias de la Cultura Física,0.101
+2019,Feb,Zootecnia y Ecología,0.1
+2019,Feb,Ciencias Agrícolas y Forestales,0.099
+2019,Feb,Ciencias Agrotecnológicas,0.099
+2019,Feb,Ingeniería,0.116
+2019,Feb,Ciencias Químicas,0.107
+2019,Feb,Contaduría y Administración,0.129
+2019,Feb,Ciencias Políticas y Sociales,0.106
+2019,Feb,Economía Internacional,0.097
+2019,Feb,Derecho,0.113
+2019,Feb,Filosofía y Letras,0.099
+2019,Feb,Artes,0.1
+2019,Feb,Medicina,0.113
+2019,Feb,Odontología,0.107
+2019,Feb,Enfermería y Nutriología,0.106
+2019,Feb,Ciencias de la Cultura Física,0.101
+2019,Mar,Zootecnia y Ecología,0.106
+2019,Mar,Ciencias Agrícolas y Forestales,0.104
+2019,Mar,Ciencias Agrotecnológicas,0.104
+2019,Mar,Ingeniería,0.122
+2019,Mar,Ciencias Químicas,0.113
+2019,Mar,Contaduría y Administración,0.136
+2019,Mar,Ciencias Políticas y Sociales,0.112
+2019,Mar,Economía Internacional,0.102
+2019,Mar,Derecho,0.119
+2019,Mar,Filosofía y Letras,0.104
+2019,Mar,Artes,0.105
+2019,Mar,Medicina,0.119
+2019,Mar,Odontología,0.113
+2019,Mar,Enfermería y Nutriología,0.112
+2019,Mar,Ciencias de la Cultura Física,0.107
+2019,Abr,Zootecnia y Ecología,0.106
+2019,Abr,Ciencias Agrícolas y Forestales,0.104
+2019,Abr,Ciencias Agrotecnológicas,0.104
+2019,Abr,Ingeniería,0.122
+2019,Abr,Ciencias Químicas,0.113
+2019,Abr,Contaduría y Administración,0.136
+2019,Abr,Ciencias Políticas y Sociales,0.112
+2019,Abr,Economía Internacional,0.102
+2019,Abr,Derecho,0.119
+2019,Abr,Filosofía y Letras,0.104
+2019,Abr,Artes,0.105
+2019,Abr,Medicina,0.119
+2019,Abr,Odontología,0.113
+2019,Abr,Enfermería y Nutriología,0.112
+2019,Abr,Ciencias de la Cultura Física,0.107
+2019,May,Zootecnia y Ecología,0.111
+2019,May,Ciencias Agrícolas y Forestales,0.109
+2019,May,Ciencias Agrotecnológicas,0.109
+2019,May,Ingeniería,0.128
+2019,May,Ciencias Químicas,0.118
+2019,May,Contaduría y Administración,0.143
+2019,May,Ciencias Políticas y Sociales,0.117
+2019,May,Economía Internacional,0.107
+2019,May,Derecho,0.125
+2019,May,Filosofía y Letras,0.109
+2019,May,Artes,0.11
+2019,May,Medicina,0.125
+2019,May,Odontología,0.118
+2019,May,Enfermería y Nutriología,0.117
+2019,May,Ciencias de la Cultura Física,0.112
+2019,Jun,Zootecnia y Ecología,0.116
+2019,Jun,Ciencias Agrícolas y Forestales,0.114
+2019,Jun,Ciencias Agrotecnológicas,0.114
+2019,Jun,Ingeniería,0.134
+2019,Jun,Ciencias Químicas,0.124
+2019,Jun,Contaduría y Administración,0.149
+2019,Jun,Ciencias Políticas y Sociales,0.123
+2019,Jun,Economía Internacional,0.112
+2019,Jun,Derecho,0.131
+2019,Jun,Filosofía y Letras,0.114
+2019,Jun,Artes,0.115
+2019,Jun,Medicina,0.131
+2019,Jun,Odontología,0.124
+2019,Jun,Enfermería y Nutriología,0.123
+2019,Jun,Ciencias de la Cultura Física,0.117
+2019,Jul,Zootecnia y Ecología,0.122
+2019,Jul,Ciencias Agrícolas y Forestales,0.119
+2019,Jul,Ciencias Agrotecnológicas,0.119
+2019,Jul,Ingeniería,0.141
+2019,Jul,Ciencias Químicas,0.129
+2019,Jul,Contaduría y Administración,0.156
+2019,Jul,Ciencias Políticas y Sociales,0.128
+2019,Jul,Economía Internacional,0.117
+2019,Jul,Derecho,0.137
+2019,Jul,Filosofía y Letras,0.119
+2019,Jul,Artes,0.12
+2019,Jul,Medicina,0.137
+2019,Jul,Odontología,0.129
+2019,Jul,Enfermería y Nutriología,0.128
+2019,Jul,Ciencias de la Cultura Física,0.123
+2019,Ago,Zootecnia y Ecología,0.116
+2019,Ago,Ciencias Agrícolas y Forestales,0.114
+2019,Ago,Ciencias Agrotecnológicas,0.114
+2019,Ago,Ingeniería,0.134
+2019,Ago,Ciencias Químicas,0.124
+2019,Ago,Contaduría y Administración,0.149
+2019,Ago,Ciencias Políticas y Sociales,0.123
+2019,Ago,Economía Internacional,0.112
+2019,Ago,Derecho,0.131
+2019,Ago,Filosofía y Letras,0.114
+2019,Ago,Artes,0.115
+2019,Ago,Medicina,0.131
+2019,Ago,Odontología,0.124
+2019,Ago,Enfermería y Nutriología,0.123
+2019,Ago,Ciencias de la Cultura Física,0.117
+2019,Sep,Zootecnia y Ecología,0.111
+2019,Sep,Ciencias Agrícolas y Forestales,0.109
+2019,Sep,Ciencias Agrotecnológicas,0.109
+2019,Sep,Ingeniería,0.128
+2019,Sep,Ciencias Químicas,0.118
+2019,Sep,Contaduría y Administración,0.143
+2019,Sep,Ciencias Políticas y Sociales,0.117
+2019,Sep,Economía Internacional,0.107
+2019,Sep,Derecho,0.125
+2019,Sep,Filosofía y Letras,0.109
+2019,Sep,Artes,0.11
+2019,Sep,Medicina,0.125
+2019,Sep,Odontología,0.118
+2019,Sep,Enfermería y Nutriología,0.117
+2019,Sep,Ciencias de la Cultura Física,0.112
+2019,Oct,Zootecnia y Ecología,0.106
+2019,Oct,Ciencias Agrícolas y Forestales,0.104
+2019,Oct,Ciencias Agrotecnológicas,0.104
+2019,Oct,Ingeniería,0.122
+2019,Oct,Ciencias Químicas,0.113
+2019,Oct,Contaduría y Administración,0.136
+2019,Oct,Ciencias Políticas y Sociales,0.112
+2019,Oct,Economía Internacional,0.102
+2019,Oct,Derecho,0.119
+2019,Oct,Filosofía y Letras,0.104
+2019,Oct,Artes,0.105
+2019,Oct,Medicina,0.119
+2019,Oct,Odontología,0.113
+2019,Oct,Enfermería y Nutriología,0.112
+2019,Oct,Ciencias de la Cultura Física,0.107
+2019,Nov,Zootecnia y Ecología,0.1
+2019,Nov,Ciencias Agrícolas y Forestales,0.099
+2019,Nov,Ciencias Agrotecnológicas,0.099
+2019,Nov,Ingeniería,0.116
+2019,Nov,Ciencias Químicas,0.107
+2019,Nov,Contaduría y Administración,0.129
+2019,Nov,Ciencias Políticas y Sociales,0.106
+2019,Nov,Economía Internacional,0.097
+2019,Nov,Derecho,0.113
+2019,Nov,Filosofía y Letras,0.099
+2019,Nov,Artes,0.1
+2019,Nov,Medicina,0.113
+2019,Nov,Odontología,0.107
+2019,Nov,Enfermería y Nutriología,0.106
+2019,Nov,Ciencias de la Cultura Física,0.101
+2019,Dic,Zootecnia y Ecología,0.095
+2019,Dic,Ciencias Agrícolas y Forestales,0.093
+2019,Dic,Ciencias Agrotecnológicas,0.093
+2019,Dic,Ingeniería,0.11
+2019,Dic,Ciencias Químicas,0.101
+2019,Dic,Contaduría y Administración,0.122
+2019,Dic,Ciencias Políticas y Sociales,0.1
+2019,Dic,Economía Internacional,0.092
+2019,Dic,Derecho,0.107
+2019,Dic,Filosofía y Letras,0.093
+2019,Dic,Artes,0.094
+2019,Dic,Medicina,0.107
+2019,Dic,Odontología,0.101
+2019,Dic,Enfermería y Nutriología,0.1
+2019,Dic,Ciencias de la Cultura Física,0.096
+2020,Ene,Zootecnia y Ecología,0.102
+2020,Ene,Ciencias Agrícolas y Forestales,0.1
+2020,Ene,Ciencias Agrotecnológicas,0.1
+2020,Ene,Ingeniería,0.118
+2020,Ene,Ciencias Químicas,0.109
+2020,Ene,Contaduría y Administración,0.131
+2020,Ene,Ciencias Políticas y Sociales,0.108
+2020,Ene,Economía Internacional,0.098
+2020,Ene,Derecho,0.115
+2020,Ene,Filosofía y Letras,0.1
+2020,Ene,Artes,0.101
+2020,Ene,Medicina,0.115
+2020,Ene,Odontología,0.109
+2020,Ene,Enfermería y Nutriología,0.108
+2020,Ene,Ciencias de la Cultura Física,0.103
+2020,Feb,Zootecnia y Ecología,0.102
+2020,Feb,Ciencias Agrícolas y Forestales,0.1
+2020,Feb,Ciencias Agrotecnológicas,0.1
+2020,Feb,Ingeniería,0.118
+2020,Feb,Ciencias Químicas,0.109
+2020,Feb,Contaduría y Administración,0.131
+2020,Feb,Ciencias Políticas y Sociales,0.108
+2020,Feb,Economía Internacional,0.098
+2020,Feb,Derecho,0.115
+2020,Feb,Filosofía y Letras,0.1
+2020,Feb,Artes,0.101
+2020,Feb,Medicina,0.115
+2020,Feb,Odontología,0.109
+2020,Feb,Enfermería y Nutriología,0.108
+2020,Feb,Ciencias de la Cultura Física,0.103
+2020,Mar,Zootecnia y Ecología,0.107
+2020,Mar,Ciencias Agrícolas y Forestales,0.105
+2020,Mar,Ciencias Agrotecnológicas,0.105
+2020,Mar,Ingeniería,0.124
+2020,Mar,Ciencias Químicas,0.114
+2020,Mar,Contaduría y Administración,0.138
+2020,Mar,Ciencias Políticas y Sociales,0.113
+2020,Mar,Economía Internacional,0.103
+2020,Mar,Derecho,0.121
+2020,Mar,Filosofía y Letras,0.105
+2020,Mar,Artes,0.106
+2020,Mar,Medicina,0.121
+2020,Mar,Odontología,0.114
+2020,Mar,Enfermería y Nutriología,0.113
+2020,Mar,Ciencias de la Cultura Física,0.108
+2020,Abr,Zootecnia y Ecología,0.107
+2020,Abr,Ciencias Agrícolas y Forestales,0.105
+2020,Abr,Ciencias Agrotecnológicas,0.105
+2020,Abr,Ingeniería,0.124
+2020,Abr,Ciencias Químicas,0.114
+2020,Abr,Contaduría y Administración,0.138
+2020,Abr,Ciencias Políticas y Sociales,0.113
+2020,Abr,Economía Internacional,0.103
+2020,Abr,Derecho,0.121
+2020,Abr,Filosofía y Letras,0.105
+2020,Abr,Artes,0.106
+2020,Abr,Medicina,0.121
+2020,Abr,Odontología,0.114
+2020,Abr,Enfermería y Nutriología,0.113
+2020,Abr,Ciencias de la Cultura Física,0.108
+2020,May,Zootecnia y Ecología,0.113
+2020,May,Ciencias Agrícolas y Forestales,0.111
+2020,May,Ciencias Agrotecnológicas,0.111
+2020,May,Ingeniería,0.13
+2020,May,Ciencias Químicas,0.12
+2020,May,Contaduría y Administración,0.145
+2020,May,Ciencias Políticas y Sociales,0.119
+2020,May,Economía Internacional,0.109
+2020,May,Derecho,0.127
+2020,May,Filosofía y Letras,0.111
+2020,May,Artes,0.112
+2020,May,Medicina,0.127
+2020,May,Odontología,0.12
+2020,May,Enfermería y Nutriología,0.119
+2020,May,Ciencias de la Cultura Física,0.114
+2020,Jun,Zootecnia y Ecología,0.118
+2020,Jun,Ciencias Agrícolas y Forestales,0.116
+2020,Jun,Ciencias Agrotecnológicas,0.116
+2020,Jun,Ingeniería,0.136
+2020,Jun,Ciencias Químicas,0.126
+2020,Jun,Contaduría y Administración,0.152
+2020,Jun,Ciencias Políticas y Sociales,0.125
+2020,Jun,Economía Internacional,0.114
+2020,Jun,Derecho,0.133
+2020,Jun,Filosofía y Letras,0.116
+2020,Jun,Artes,0.117
+2020,Jun,Medicina,0.133
+2020,Jun,Odontología,0.126
+2020,Jun,Enfermería y Nutriología,0.125
+2020,Jun,Ciencias de la Cultura Física,0.119
+2020,Jul,Zootecnia y Ecología,0.123
+2020,Jul,Ciencias Agrícolas y Forestales,0.121
+2020,Jul,Ciencias Agrotecnológicas,0.121
+2020,Jul,Ingeniería,0.143
+2020,Jul,Ciencias Químicas,0.131
+2020,Jul,Contaduría y Administración,0.159
+2020,Jul,Ciencias Políticas y Sociales,0.13
+2020,Jul,Economía Internacional,0.119
+2020,Jul,Derecho,0.139
+2020,Jul,Filosofía y Letras,0.121
+2020,Jul,Artes,0.122
+2020,Jul,Medicina,0.139
+2020,Jul,Odontología,0.131
+2020,Jul,Enfermería y Nutriología,0.13
+2020,Jul,Ciencias de la Cultura Física,0.125
+2020,Ago,Zootecnia y Ecología,0.118
+2020,Ago,Ciencias Agrícolas y Forestales,0.116
+2020,Ago,Ciencias Agrotecnológicas,0.116
+2020,Ago,Ingeniería,0.136
+2020,Ago,Ciencias Químicas,0.126
+2020,Ago,Contaduría y Administración,0.152
+2020,Ago,Ciencias Políticas y Sociales,0.125
+2020,Ago,Economía Internacional,0.114
+2020,Ago,Derecho,0.133
+2020,Ago,Filosofía y Letras,0.116
+2020,Ago,Artes,0.117
+2020,Ago,Medicina,0.133
+2020,Ago,Odontología,0.126
+2020,Ago,Enfermería y Nutriología,0.125
+2020,Ago,Ciencias de la Cultura Física,0.119
+2020,Sep,Zootecnia y Ecología,0.113
+2020,Sep,Ciencias Agrícolas y Forestales,0.111
+2020,Sep,Ciencias Agrotecnológicas,0.111
+2020,Sep,Ingeniería,0.13
+2020,Sep,Ciencias Químicas,0.12
+2020,Sep,Contaduría y Administración,0.145
+2020,Sep,Ciencias Políticas y Sociales,0.119
+2020,Sep,Economía Internacional,0.109
+2020,Sep,Derecho,0.127
+2020,Sep,Filosofía y Letras,0.111
+2020,Sep,Artes,0.112
+2020,Sep,Medicina,0.127
+2020,Sep,Odontología,0.12
+2020,Sep,Enfermería y Nutriología,0.119
+2020,Sep,Ciencias de la Cultura Física,0.114
+2020,Oct,Zootecnia y Ecología,0.107
+2020,Oct,Ciencias Agrícolas y Forestales,0.105
+2020,Oct,Ciencias Agrotecnológicas,0.105
+2020,Oct,Ingeniería,0.124
+2020,Oct,Ciencias Químicas,0.114
+2020,Oct,Contaduría y Administración,0.138
+2020,Oct,Ciencias Políticas y Sociales,0.113
+2020,Oct,Economía Internacional,0.103
+2020,Oct,Derecho,0.121
+2020,Oct,Filosofía y Letras,0.105
+2020,Oct,Artes,0.106
+2020,Oct,Medicina,0.121
+2020,Oct,Odontología,0.114
+2020,Oct,Enfermería y Nutriología,0.113
+2020,Oct,Ciencias de la Cultura Física,0.108
+2020,Nov,Zootecnia y Ecología,0.102
+2020,Nov,Ciencias Agrícolas y Forestales,0.1
+2020,Nov,Ciencias Agrotecnológicas,0.1
+2020,Nov,Ingeniería,0.118
+2020,Nov,Ciencias Químicas,0.109
+2020,Nov,Contaduría y Administración,0.131
+2020,Nov,Ciencias Políticas y Sociales,0.108
+2020,Nov,Economía Internacional,0.098
+2020,Nov,Derecho,0.115
+2020,Nov,Filosofía y Letras,0.1
+2020,Nov,Artes,0.101
+2020,Nov,Medicina,0.115
+2020,Nov,Odontología,0.109
+2020,Nov,Enfermería y Nutriología,0.108
+2020,Nov,Ciencias de la Cultura Física,0.103
+2020,Dic,Zootecnia y Ecología,0.097
+2020,Dic,Ciencias Agrícolas y Forestales,0.095
+2020,Dic,Ciencias Agrotecnológicas,0.095
+2020,Dic,Ingeniería,0.112
+2020,Dic,Ciencias Químicas,0.103
+2020,Dic,Contaduría y Administración,0.124
+2020,Dic,Ciencias Políticas y Sociales,0.102
+2020,Dic,Economía Internacional,0.093
+2020,Dic,Derecho,0.109
+2020,Dic,Filosofía y Letras,0.095
+2020,Dic,Artes,0.096
+2020,Dic,Medicina,0.109
+2020,Dic,Odontología,0.103
+2020,Dic,Enfermería y Nutriología,0.102
+2020,Dic,Ciencias de la Cultura Física,0.097
+2021,Ene,Zootecnia y Ecología,0.104
+2021,Ene,Ciencias Agrícolas y Forestales,0.102
+2021,Ene,Ciencias Agrotecnológicas,0.102
+2021,Ene,Ingeniería,0.12
+2021,Ene,Ciencias Químicas,0.11
+2021,Ene,Contaduría y Administración,0.133
+2021,Ene,Ciencias Políticas y Sociales,0.109
+2021,Ene,Economía Internacional,0.1
+2021,Ene,Derecho,0.117
+2021,Ene,Filosofía y Letras,0.102
+2021,Ene,Artes,0.103
+2021,Ene,Medicina,0.117
+2021,Ene,Odontología,0.11
+2021,Ene,Enfermería y Nutriología,0.109
+2021,Ene,Ciencias de la Cultura Física,0.104
+2021,Feb,Zootecnia y Ecología,0.104
+2021,Feb,Ciencias Agrícolas y Forestales,0.102
+2021,Feb,Ciencias Agrotecnológicas,0.102
+2021,Feb,Ingeniería,0.12
+2021,Feb,Ciencias Químicas,0.11
+2021,Feb,Contaduría y Administración,0.133
+2021,Feb,Ciencias Políticas y Sociales,0.109
+2021,Feb,Economía Internacional,0.1
+2021,Feb,Derecho,0.117
+2021,Feb,Filosofía y Letras,0.102
+2021,Feb,Artes,0.103
+2021,Feb,Medicina,0.117
+2021,Feb,Odontología,0.11
+2021,Feb,Enfermería y Nutriología,0.109
+2021,Feb,Ciencias de la Cultura Física,0.104
+2021,Mar,Zootecnia y Ecología,0.109
+2021,Mar,Ciencias Agrícolas y Forestales,0.107
+2021,Mar,Ciencias Agrotecnológicas,0.107
+2021,Mar,Ingeniería,0.126
+2021,Mar,Ciencias Químicas,0.116
+2021,Mar,Contaduría y Administración,0.14
+2021,Mar,Ciencias Políticas y Sociales,0.115
+2021,Mar,Economía Internacional,0.105
+2021,Mar,Derecho,0.123
+2021,Mar,Filosofía y Letras,0.107
+2021,Mar,Artes,0.108
+2021,Mar,Medicina,0.123
+2021,Mar,Odontología,0.116
+2021,Mar,Enfermería y Nutriología,0.115
+2021,Mar,Ciencias de la Cultura Física,0.11
+2021,Abr,Zootecnia y Ecología,0.109
+2021,Abr,Ciencias Agrícolas y Forestales,0.107
+2021,Abr,Ciencias Agrotecnológicas,0.107
+2021,Abr,Ingeniería,0.126
+2021,Abr,Ciencias Químicas,0.116
+2021,Abr,Contaduría y Administración,0.14
+2021,Abr,Ciencias Políticas y Sociales,0.115
+2021,Abr,Economía Internacional,0.105
+2021,Abr,Derecho,0.123
+2021,Abr,Filosofía y Letras,0.107
+2021,Abr,Artes,0.108
+2021,Abr,Medicina,0.123
+2021,Abr,Odontología,0.116
+2021,Abr,Enfermería y Nutriología,0.115
+2021,Abr,Ciencias de la Cultura Física,0.11
+2021,May,Zootecnia y Ecología,0.114
+2021,May,Ciencias Agrícolas y Forestales,0.112
+2021,May,Ciencias Agrotecnológicas,0.112
+2021,May,Ingeniería,0.132
+2021,May,Ciencias Químicas,0.122
+2021,May,Contaduría y Administración,0.147
+2021,May,Ciencias Políticas y Sociales,0.121
+2021,May,Economía Internacional,0.11
+2021,May,Derecho,0.129
+2021,May,Filosofía y Letras,0.112
+2021,May,Artes,0.113
+2021,May,Medicina,0.129
+2021,May,Odontología,0.122
+2021,May,Enfermería y Nutriología,0.121
+2021,May,Ciencias de la Cultura Física,0.116
+2021,Jun,Zootecnia y Ecología,0.12
+2021,Jun,Ciencias Agrícolas y Forestales,0.118
+2021,Jun,Ciencias Agrotecnológicas,0.118
+2021,Jun,Ingeniería,0.139
+2021,Jun,Ciencias Químicas,0.128
+2021,Jun,Contaduría y Administración,0.154
+2021,Jun,Ciencias Políticas y Sociales,0.127
+2021,Jun,Economía Internacional,0.116
+2021,Jun,Derecho,0.135
+2021,Jun,Filosofía y Letras,0.118
+2021,Jun,Artes,0.119
+2021,Jun,Medicina,0.135
+2021,Jun,Odontología,0.128
+2021,Jun,Enfermería y Nutriología,0.127
+2021,Jun,Ciencias de la Cultura Física,0.121
+2021,Jul,Zootecnia y Ecología,0.125
+2021,Jul,Ciencias Agrícolas y Forestales,0.123
+2021,Jul,Ciencias Agrotecnológicas,0.123
+2021,Jul,Ingeniería,0.145
+2021,Jul,Ciencias Químicas,0.133
+2021,Jul,Contaduría y Administración,0.161
+2021,Jul,Ciencias Políticas y Sociales,0.132
+2021,Jul,Economía Internacional,0.121
+2021,Jul,Derecho,0.141
+2021,Jul,Filosofía y Letras,0.123
+2021,Jul,Artes,0.124
+2021,Jul,Medicina,0.141
+2021,Jul,Odontología,0.133
+2021,Jul,Enfermería y Nutriología,0.132
+2021,Jul,Ciencias de la Cultura Física,0.127
+2021,Ago,Zootecnia y Ecología,0.12
+2021,Ago,Ciencias Agrícolas y Forestales,0.118
+2021,Ago,Ciencias Agrotecnológicas,0.118
+2021,Ago,Ingeniería,0.139
+2021,Ago,Ciencias Químicas,0.128
+2021,Ago,Contaduría y Administración,0.154
+2021,Ago,Ciencias Políticas y Sociales,0.127
+2021,Ago,Economía Internacional,0.116
+2021,Ago,Derecho,0.135
+2021,Ago,Filosofía y Letras,0.118
+2021,Ago,Artes,0.119
+2021,Ago,Medicina,0.135
+2021,Ago,Odontología,0.128
+2021,Ago,Enfermería y Nutriología,0.127
+2021,Ago,Ciencias de la Cultura Física,0.121
+2021,Sep,Zootecnia y Ecología,0.114
+2021,Sep,Ciencias Agrícolas y Forestales,0.112
+2021,Sep,Ciencias Agrotecnológicas,0.112
+2021,Sep,Ingeniería,0.132
+2021,Sep,Ciencias Químicas,0.122
+2021,Sep,Contaduría y Administración,0.147
+2021,Sep,Ciencias Políticas y Sociales,0.121
+2021,Sep,Economía Internacional,0.11
+2021,Sep,Derecho,0.129
+2021,Sep,Filosofía y Letras,0.112
+2021,Sep,Artes,0.113
+2021,Sep,Medicina,0.129
+2021,Sep,Odontología,0.122
+2021,Sep,Enfermería y Nutriología,0.121
+2021,Sep,Ciencias de la Cultura Física,0.116
+2021,Oct,Zootecnia y Ecología,0.109
+2021,Oct,Ciencias Agrícolas y Forestales,0.107
+2021,Oct,Ciencias Agrotecnológicas,0.107
+2021,Oct,Ingeniería,0.126
+2021,Oct,Ciencias Químicas,0.116
+2021,Oct,Contaduría y Administración,0.14
+2021,Oct,Ciencias Políticas y Sociales,0.115
+2021,Oct,Economía Internacional,0.105
+2021,Oct,Derecho,0.123
+2021,Oct,Filosofía y Letras,0.107
+2021,Oct,Artes,0.108
+2021,Oct,Medicina,0.123
+2021,Oct,Odontología,0.116
+2021,Oct,Enfermería y Nutriología,0.115
+2021,Oct,Ciencias de la Cultura Física,0.11
+2021,Nov,Zootecnia y Ecología,0.104
+2021,Nov,Ciencias Agrícolas y Forestales,0.102
+2021,Nov,Ciencias Agrotecnológicas,0.102
+2021,Nov,Ingeniería,0.12
+2021,Nov,Ciencias Químicas,0.11
+2021,Nov,Contaduría y Administración,0.133
+2021,Nov,Ciencias Políticas y Sociales,0.109
+2021,Nov,Economía Internacional,0.1
+2021,Nov,Derecho,0.117
+2021,Nov,Filosofía y Letras,0.102
+2021,Nov,Artes,0.103
+2021,Nov,Medicina,0.117
+2021,Nov,Odontología,0.11
+2021,Nov,Enfermería y Nutriología,0.109
+2021,Nov,Ciencias de la Cultura Física,0.104
+2021,Dic,Zootecnia y Ecología,0.098
+2021,Dic,Ciencias Agrícolas y Forestales,0.096
+2021,Dic,Ciencias Agrotecnológicas,0.096
+2021,Dic,Ingeniería,0.113
+2021,Dic,Ciencias Químicas,0.104
+2021,Dic,Contaduría y Administración,0.126
+2021,Dic,Ciencias Políticas y Sociales,0.104
+2021,Dic,Economía Internacional,0.095
+2021,Dic,Derecho,0.111
+2021,Dic,Filosofía y Letras,0.096
+2021,Dic,Artes,0.097
+2021,Dic,Medicina,0.111
+2021,Dic,Odontología,0.104
+2021,Dic,Enfermería y Nutriología,0.104
+2021,Dic,Ciencias de la Cultura Física,0.099
