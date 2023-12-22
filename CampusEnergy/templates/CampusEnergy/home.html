@@ -1,21 +1,25 @@
+{% block content %}
 {% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CEEDS-UACH Homepage</title>
+    <title>CEEDS Homepage</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 </head>
 <body>
     <header>
         <img src="{% static 'images/department-logo.png' %}" alt="Department Logo" class="department-logo">
-        <h1>Welcome to CEEDS-UACH</h1>
-        <img src="{% static 'images/university-logo.png' %}" alt="University Logo" class="university-logo">
+        <h1>Welcome to CEEDS</h1>
+    <!--<img src="{% static 'images/university-logo.png' %}" alt="University Logo" class="university-logo">-->
     </header>      
     <nav>
         <ul>
             <li><a href="{% url 'dashboard_view' %} ">Energy Dashboard</a></li>
+            <li><a href="">More tools 2</a></li>
+            <li><a href="">More tools 3</a></li>
+            <li><a href="">...</a></li>
             <!-- Add more menu items here -->
         </ul>
     </nav>
@@ -26,14 +30,15 @@
             <p>Policy Analysis</p>
         </div>
         <div class="branch-card">
-            <img src="{% static 'images/lawjusticelogo.png' %}" alt="Law and Justice" class="branch-logo">
-            <p>Law and Justice</p>
+            <img src="{% static 'images/lawjusticelogo2.png' %}" alt="Law and Justice" class="branch-logo">
+            <p>Energy & Climate</p>
         </div>
         <div class="branch-card">
             <img src="{% static 'images/datasciencelogo.png' %}" alt="Data Science" class="branch-logo">
             <p>Data Science</p>
         </div>
     </div>    
-    
+        
 </body>
 </html>
+{% endblock %}

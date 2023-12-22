@@ -6,7 +6,9 @@ from .models import School, EnergyConsumption
 from django.core.exceptions import ObjectDoesNotExist
 from .forms import CSVUploadForm
 from .utils import import_data  # Assume import_data is moved to utils.py
-from django.db.models import Sum
+from django.db.models import Sum, Avg, Min, Max
+from sklearn.linear_model import LinearRegression
+import pandas as pd
 
 # Functions here
 
@@ -15,12 +17,21 @@ def home(request):
 
 
 def dashboard_view(request):
+    # Existing filter captures
     year_filter = request.GET.get('year', 'All')
     school_filter = request.GET.get('school', 'All')
     sort_order = request.GET.get('sort', 'year')  # Default sorting by year
+    # Capture the chart type
+    chart_type = request.GET.get('chart_type', 'bar')  # Default to 'bar' if not specified
+
+    # Capture and validate the sort order
+    sort_order = request.GET.get('sort', 'year')  # Default sorting by year
+    valid_sort_fields = {'year', '-year', 'school__name', '-school__name', 'total_consumption', '-total_consumption'}
+    if sort_order not in valid_sort_fields:
+        sort_order = 'year'  # Default to year if sort_order is invalid
 
     distinct_years = ['All'] + list(EnergyConsumption.objects.order_by('year').values_list('year', flat=True).distinct())
-    schools = ['University Total'] + ['All'] + list(School.objects.values_list('name', flat=True))
+    schools = ['All', 'University Total'] + list(School.objects.values_list('name', flat=True))
 
     # Determine the queryset based on filters
     if year_filter == 'All' and school_filter == 'All':
@@ -40,15 +51,70 @@ def dashboard_view(request):
 
     # Preparing data for the chart
     chart_data = {
-        'labels': [],  # Will hold the years
-        'data': [],    # Will hold the corresponding total consumption for each year
+        'labels': [],  # Will hold the years or school names based on the filter
+        'data': [],    # Will hold the corresponding total consumption
     }
 
-    total_consumption_by_year = EnergyConsumption.objects.values('year').annotate(total_consumption=Sum('energy_consumed')).order_by('year')
-    for entry in total_consumption_by_year:
-        chart_data['labels'].append(entry['year'])
+    # Adjust the chart data based on the filters
+    if year_filter == 'All' and school_filter == 'All':
+        # Total consumption by year for all schools
+        chart_data_query = EnergyConsumption.objects.values('year').annotate(total_consumption=Sum('energy_consumed')).order_by('year')
+    elif school_filter == 'University Total':
+        # Total consumption by year across all schools
+        chart_data_query = EnergyConsumption.objects.values('year').annotate(total_consumption=Sum('energy_consumed')).order_by('year')
+    else:
+        # Filter based on year and/or school
+        chart_data_query = EnergyConsumption.objects
+        if year_filter != 'All':
+            chart_data_query = chart_data_query.filter(year=year_filter)
+        if school_filter != 'All':
+            chart_data_query = chart_data_query.filter(school__name=school_filter)
+        chart_data_query = chart_data_query.values('year', 'school__name').annotate(total_consumption=Sum('energy_consumed')).order_by('year')
+
+    for entry in chart_data_query:
+        if school_filter == 'University Total':
+            label = entry['year']
+        else:
+            label = entry['year'] if year_filter == 'All' else entry['school__name']
+        chart_data['labels'].append(label)
         chart_data['data'].append(entry['total_consumption'])
 
+
+    # Initialize prediction result variable
+    prediction_result = None
+    data_view_active = True
+    prediction_view_active = False
+
+    if 'predict_year' in request.GET and 'predict_school' in request.GET:
+        predict_year = int(request.GET.get('predict_year'))
+        predict_school = request.GET.get('predict_school')
+        data_view_active = False
+        prediction_view_active = True
+
+        if predict_school == 'University Total':
+            # Fetch historical data for the entire university (all schools)
+            historical_data = EnergyConsumption.objects \
+                                .values('year') \
+                                .annotate(total_energy_consumed=Sum('energy_consumed'))
+
+            # Debug: Print the query and its count
+            print("Query:", historical_data.query)
+            print("Data Count:", historical_data.count())
+
+            if not historical_data:
+                prediction_result = "No historical data found."
+            else:
+                df = pd.DataFrame(list(historical_data))
+                print("Historical data:", df)
+
+                if len(df) > 1:
+                    model = LinearRegression()
+                    model.fit(df[['year']], df['total_energy_consumed'])
+                    prediction_result = model.predict([[predict_year]])[0]
+                else:
+                    prediction_result = "Not enough data for prediction."
+        else:
+            prediction_result = "Prediction available for University Total only."
 
     return render(request, 'CampusEnergy/dashboard.html', {
         'consumption_data': consumption_data,
@@ -57,7 +123,12 @@ def dashboard_view(request):
         'uploaded_file_name': request.session.get('uploaded_file_name', 'No file uploaded'),
         'year_filter': year_filter,
         'school_filter': school_filter, 
-        'chart_data': chart_data, 
+        'chart_data': chart_data,
+        'chart_type': chart_type,  
+        'prediction_result': prediction_result,
+        'predict_year': predict_year if 'predict_year' in request.GET else None,
+        'data_view_active': data_view_active,
+        'prediction_view_active': prediction_view_active,
     })
 
 

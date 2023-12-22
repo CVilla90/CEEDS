@@ -22,10 +22,18 @@
         <a href="{% url 'wipe_data_view' %}" id="wipe-data-btn" class="wipe-button">Wipe Data and Start Fresh</a>
     </div>
 
-    <!-- Filter Form -->
+<!-- Tabs for switching views -->
+<div class="tab">
+    <button class="tablinks {% if data_view_active %}active{% endif %}" onclick="openTab(event, 'DataView')">Data View</button>
+    <button class="tablinks {% if prediction_view_active %}active{% endif %}" onclick="openTab(event, 'Prediction')">Prediction</button>
+</div>
+
+    <!-- Tab content for Data View -->
+    <div id="DataView" class="tabcontent">
+
+    <!-- Filter Form with Chart Type Selection -->
     <form method="get" action="{% url 'dashboard_view' %}">
         <select name="year">
-            <option value="All">All</option>
             {% for year in distinct_years %}
             <option value="{{ year }}" {% if year|stringformat:"s" == year_filter %}selected{% endif %}>
                 {{ year }}
@@ -33,7 +41,6 @@
             {% endfor %}
         </select>
         <select name="school">
-            <option value="All">All</option>
             {% for school in schools %}
             <option value="{{ school }}" {% if school == school_filter %}selected{% endif %}>
                 {{ school }}
@@ -68,35 +75,141 @@
         {% endfor %}        
     </table>
 
-<!-- Chart container -->
-<div>
-    <canvas id="energyChart"></canvas>
+    <!-- Separate Form for Chart Type Selection -->
+    <form method="get" action="{% url 'dashboard_view' %}">
+        <!-- Include existing filter values to maintain filter state -->
+        <input type="hidden" name="year" value="{{ year_filter }}">
+        <input type="hidden" name="school" value="{{ school_filter }}">
+        <input type="hidden" name="sort" value="{{ sort_order }}">
+
+        <!-- Chart Type Selection Dropdown -->
+        <select name="chart_type">
+            <option value="bar" {% if chart_type == 'bar' %}selected{% endif %}>Bar Chart</option>
+            <option value="pie" {% if chart_type == 'pie' %}selected{% endif %}>Pie Chart</option>
+            <!-- Additional chart types can be added here -->
+        </select>
+        <button type="submit">Change Chart Type</button>
+    </form>
+
+    <!-- Chart container -->
+    <div class="chart-container">
+        <canvas id="energyChart"></canvas>
+    </div>
+
 </div>
 
-<!-- Inline script to create chart, at the bottom of your <body> tag -->
-<script>
-    var ctx = document.getElementById('energyChart').getContext('2d');
-    var energyChart = new Chart(ctx, {
-        type: 'bar', // or 'line', 'doughnut', etc.
-        data: {
-            labels: {{ chart_data.labels|safe }},  // Insert the years
-            datasets: [{
-                label: 'Energy Consumption',
-                data: {{ chart_data.data|safe }},  // Insert the consumption data
-                backgroundColor: 'rgba(0, 123, 255, 0.5)',
-                borderColor: 'rgba(0, 123, 255, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+<!-- Tab content for Prediction -->
+<div id="Prediction" class="tabcontent">
+    <h2>Predict University Total Energy Consumption</h2>
+    <form method="get" action="{% url 'dashboard_view' %}">
+        <label for="predict_year">Enter Year:</label>
+        <input type="number" name="predict_year" min="0" required>
+
+        <!-- Hidden input for school selection -->
+        <input type="hidden" name="predict_school" value="University Total">
+
+        <div id="loadingContainer" style="display: none;">
+            <div class="loadingBar"></div>
+            <p>Calculating...</p>
+        </div>
+    
+        <button type="submit" id="predictButton">Predict</button>
+    </form>
+
+    {% if prediction_result %}
+    <div class="prediction-result">
+        <h3>Prediction Result:</h3>
+        <p>Estimated Energy Consumption for {{ predict_year }} at {{ predict_school }}: {{ prediction_result }} GWh</p>
+    </div>
+    {% endif %}
+</div>
+
+
+    <script>
+        document.getElementById('predictButton').addEventListener('click', function(e) {
+            e.preventDefault();
+            var form = this.closest('form');
+            var loadingBar = document.querySelector('.loadingBar');
+            
+            // Generate a random duration between 1 and 3 seconds (1000 to 3000 milliseconds)
+            var randomDuration = Math.floor(Math.random() * (3000 - 1000 + 1)) + 1000;
+
+            // Display the loading container
+            document.getElementById('loadingContainer').style.display = 'block';
+
+            // Set initial width to 0
+            loadingBar.style.width = '0%';
+
+            // Set the transition duration for the loading bar
+            loadingBar.style.transition = 'width ' + randomDuration + 'ms linear';
+
+            // Start the transition to 100% width
+            setTimeout(function() {
+                loadingBar.style.width = '100%';
+            }, 50);  // Small delay to ensure transition is visible
+
+            // Submit the form after the random duration
+            setTimeout(function() {
+                form.submit();
+            }, randomDuration);
+        });
+    </script>
+
+    <!-- Include JavaScript for tabs functionality -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Open the active tab on page load
+            if (document.querySelector('.tablinks.active')) {
+                document.querySelector('.tablinks.active').click();
             }
+        });
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
-    });
-</script>
+    </script>
+
+    <!-- Inline script to create chart -->
+    <script>
+        var ctx = document.getElementById('energyChart').getContext('2d');
+        var chartType = "{{ chart_type }}";
+    
+        // Check if a previous chart instance exists and destroy it
+        if (window.energyChart && typeof window.energyChart.destroy === 'function') {
+            window.energyChart.destroy();
+        }
+    
+        // Configuration for the chart
+        var config = {
+            type: chartType,
+            data: {
+                labels: {{ chart_data.labels|safe }},
+                datasets: [{
+                    label: 'Energy Consumption',
+                    data: {{ chart_data.data|safe }},
+                    backgroundColor: chartType === 'bar' ? 'rgba(0, 123, 255, 0.5)' : null,
+                    borderColor: chartType === 'bar' ? 'rgba(0, 123, 255, 1)' : null,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                // Chart options
+            }
+        };
+    
+        // Create the chart
+        window.energyChart = new Chart(ctx, config);
+    </script>    
 
 </body>
 </html>
