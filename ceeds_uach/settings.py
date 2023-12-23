@@ -29,7 +29,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ceeds--cavilla.repl.co', '10.82.192.112', 'ceeds.cavilla.repl.co',
+]
 
 
 # Application definition

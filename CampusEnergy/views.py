@@ -144,12 +144,15 @@ def dashboard_view(request):
             if not historical_data:
                 prediction_result = "No historical data found."
             else:
-                df = pd.DataFrame(list(historical_data))
+                # Here I was using:  "df = pd.DataFrame(list(historical_data))" but I had to find a way around it using only numpy.
+                # Process historical_data without pandas
+                years = [data['year'] for data in historical_data]
+                total_energy_consumed = [data['total_energy_consumed'] for data in historical_data]
 
-                if len(df) > 1:
-                    # Convert year and total_energy_consumed to numpy arrays
-                    X = df['year'].values
-                    Y = df['total_energy_consumed'].values
+                if len(years) > 1:
+                    # Convert year and total_energy_consumed to numpy arrays (if numpy is still usable)
+                    X = np.array(years)
+                    Y = np.array(total_energy_consumed)
 
                     # Mean of X and Y
                     mean_x = np.mean(X)
