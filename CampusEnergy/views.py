@@ -9,6 +9,7 @@ from .utils import import_data  # Assume import_data is moved to utils.py
 from django.db.models import Sum, Avg, Min, Max
 from sklearn.linear_model import LinearRegression
 import pandas as pd
+import numpy as np
 
 # Functions here
 
@@ -79,6 +80,49 @@ def dashboard_view(request):
         chart_data['labels'].append(label)
         chart_data['data'].append(entry['total_consumption'])
 
+# Commented out because the host (REPLIT) can't deal with scikit-learn library 
+
+    # Initialize prediction result variable
+
+    #prediction_result = None
+    #data_view_active = True
+    #prediction_view_active = False
+
+    #if 'predict_year' in request.GET and 'predict_school' in request.GET:
+        #predict_year = int(request.GET.get('predict_year'))
+        #predict_school = request.GET.get('predict_school')
+        #data_view_active = False
+        #prediction_view_active = True
+
+        #if predict_school == 'University Total':
+
+            # Fetch historical data for the entire university (all schools)
+
+            #historical_data = EnergyConsumption.objects \
+                                #.values('year') \
+                                #.annotate(total_energy_consumed=Sum('energy_consumed'))
+
+            # Debug: Print the query and its count
+
+            #print("Query:", historical_data.query)
+            #print("Data Count:", historical_data.count())
+
+            #if not historical_data:
+                #prediction_result = "No historical data found."
+            #else:
+                #df = pd.DataFrame(list(historical_data))
+                #print("Historical data:", df)
+
+                #if len(df) > 1:
+                    #model = LinearRegression()
+                    #model.fit(df[['year']], df['total_energy_consumed'])
+                    #prediction_result = model.predict([[predict_year]])[0]
+                #else:
+                    #prediction_result = "Not enough data for prediction."
+        #else:
+            #prediction_result = "Prediction available for University Total only."
+
+# End of commented out section, and beggning of machine learning section but now using numpy:
 
     # Initialize prediction result variable
     prediction_result = None
@@ -97,20 +141,34 @@ def dashboard_view(request):
                                 .values('year') \
                                 .annotate(total_energy_consumed=Sum('energy_consumed'))
 
-            # Debug: Print the query and its count
-            print("Query:", historical_data.query)
-            print("Data Count:", historical_data.count())
-
             if not historical_data:
                 prediction_result = "No historical data found."
             else:
                 df = pd.DataFrame(list(historical_data))
-                print("Historical data:", df)
 
                 if len(df) > 1:
-                    model = LinearRegression()
-                    model.fit(df[['year']], df['total_energy_consumed'])
-                    prediction_result = model.predict([[predict_year]])[0]
+                    # Convert year and total_energy_consumed to numpy arrays
+                    X = df['year'].values
+                    Y = df['total_energy_consumed'].values
+
+                    # Mean of X and Y
+                    mean_x = np.mean(X)
+                    mean_y = np.mean(Y)
+
+                    # Total number of values
+                    n = len(X)
+
+                    # Using the formula to calculate 'm' and 'c'
+                    numer = 0
+                    denom = 0
+                    for i in range(n):
+                        numer += (X[i] - mean_x) * (Y[i] - mean_y)
+                        denom += (X[i] - mean_x) ** 2
+                    m = numer / denom
+                    c = mean_y - (m * mean_x)
+
+                    # Making predictions
+                    prediction_result = m * predict_year + c
                 else:
                     prediction_result = "Not enough data for prediction."
         else:
