@@ -7,8 +7,8 @@ from django.core.exceptions import ObjectDoesNotExist
 from .forms import CSVUploadForm
 from .utils import import_data  # Assume import_data is moved to utils.py
 from django.db.models import Sum, Avg, Min, Max
-from sklearn.linear_model import LinearRegression
-import pandas as pd
+#from sklearn.linear_model import LinearRegression
+#import pandas as pd
 import numpy as np
 
 # Functions here
